@@ -12,6 +12,20 @@ void problem_1(){
     printf("%d\n", sum);
 }
 
+void problem_2(){
+    int list[] = {2, 3};
+    int sum = 0;
+    while (list[0] <= 4000000){
+        int temp = list[0] + list[1];
+        if (list[0] % 2 == 0){
+            sum += list[0];
+        }
+        list[0] = list[1];
+        list[1] = temp;
+    }
+    printf("%d\n", sum);
+}
+
 main(){
 	printf("Hello World\n");
 }
