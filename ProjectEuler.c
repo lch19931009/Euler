@@ -56,6 +56,16 @@ void problem_3(){
     }
 }
 
+void problem_4(){
+    for (int i = 999; i <= 100; i--){
+        for (int j = 100; j < 999; j++){
+            char temp = i * j;
+            /*if (temp[0] == temp[]){
+             }*/
+        }
+    }
+}
+
 main(){
 	printf("Hello World\n");
 }
