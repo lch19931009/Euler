@@ -26,6 +26,36 @@ void problem_2(){
     printf("%d\n", sum);
 }
 
+void problem_3(){
+    long num = 600851475143;
+    int temp = 0;
+    while (num%2 == 0){
+        num = num/2;
+    }
+    
+    for (int i = 3; i < num/2; i+=2){
+        for (int j = 3; j <= i/2; j +=2){
+            if (i%j != 0){
+                while (num%i == 0){
+                    num = num/i;
+                    if (num > i){
+                        temp = num;
+                    }
+                    else{
+                        temp = i;
+                    }
+                }
+            }
+        }
+    }
+    if (temp != 0){
+        printf("%d\n", temp);
+    }
+    else{
+        printf("%ld\n", num);
+    }
+}
+
 main(){
 	printf("Hello World\n");
 }
